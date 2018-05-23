@@ -12,4 +12,8 @@ get '/products' do
 	erb :products
 end
 
+get '/asimpage' do 
+	erb :asinpage
+end 
+
 
