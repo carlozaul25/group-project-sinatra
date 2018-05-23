@@ -13,7 +13,7 @@ get '/products' do
 end
 
 get '/asimpage' do 
-	erb :asinpage
+	erb :asimpage
 end 
 
 
