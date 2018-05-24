@@ -4,7 +4,11 @@ margin-left: 10px;
 }
 
 body{
-  background-color: $background-color;
+  // background-color: $background-color;
+  background-image: url("bg2.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 1024px;
 }
 
 h1{
