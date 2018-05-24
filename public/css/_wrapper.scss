@@ -7,23 +7,26 @@ body{
 }
 
 h1{
-  color: $link-color;
+  color: $accent-color;
   font-family: $accent-font;
 }
 
 h2{
-  color: $link-color;
+  color: $accent-color;
   font-family: $accent-font;
+  text-shadow: 1px 1px dimgrey;
 }
 
 a:link{
   color: $link-color;
   font-family: $main-font;
+  text-decoration: none;
 }
 
 a:visited{
   color: $link-color;
   font-family: $main-font;
+  text-decoration: none;
 }
 
 a:hover{
