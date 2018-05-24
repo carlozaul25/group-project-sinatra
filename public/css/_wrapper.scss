@@ -1,19 +1,28 @@
 .wrapper{
 font-family: $main-font;
-background-color: whitesmoke;
+}
+
+body{
+  background-color: $background-color;
+}
+
+h1{
+  color: $link-color;
+  font-family: $accent-font;
 }
 
 h2{
-  color: red;
+  color: $link-color;
+  font-family: $accent-font;
 }
 
 a:link{
-  color: green;
+  color: $link-color;
   font-family: $main-font;
 }
 
 a:visited{
-  color: green;
+  color: $link-color;
   font-family: $main-font;
 }
 
