@@ -2,11 +2,29 @@
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     border: 2px soild red;
 }
 #a, img{
+ background-repeat:no-repeat;
 width: 100px;
 height: 100px;
 display: flex;
-grid-gap: 6px;
+grid-row: 1/2;
+
 }
+#b, img{
+    background-repeat:no-repeat;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    grid-row:3/4;
+   
+    }
+
+    // #c, img{
+    //     width: 100px;
+    //     height: 100px;
+    //     display: flex;
+    //     grid-gap: 6px;
+    //     }
