@@ -1,5 +1,10 @@
-.navbar {
+.navbar li {
 	list-style-type: none;
-	 color: $accent-color;
-	 font-family: $main-font;
+	font-family: $main-font;
+	display: inline;
+	padding: 10px;
 }
+.navbar li a {
+	color:$second-link;
+	font-size: 20px;
+ }
