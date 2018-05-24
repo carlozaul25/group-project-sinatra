@@ -1,0 +1,23 @@
+.wrapper{
+font-family: $main-font;
+background-color: whitesmoke;
+}
+
+h2{
+  color: red;
+}
+
+a:link{
+  color: green;
+  font-family: $main-font;
+}
+
+a:visited{
+  color: green;
+  font-family: $main-font;
+}
+
+a:hover{
+  font-weight: bold;
+  font-family: $main-font;
+}
