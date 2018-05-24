@@ -2,29 +2,34 @@
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr ;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    border: 2px soild red;
+    // grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 6px;
+
 }
 #a, img{
  background-repeat:no-repeat;
 width: 100px;
 height: 100px;
-display: flex;
-grid-row: 1/2;
+display: inline-block;
+grid-column-start: 1/4;
+grid-row-start: 1/2;
 
 }
 #b, img{
     background-repeat:no-repeat;
     width: 100px;
     height: 100px;
-    display: flex;
-    grid-row:3/4;
+    display: inline-block;
+    grid-column-start: 1/4;
+    grid-row-start: 2/3;
    
     }
 
-    // #c, img{
-    //     width: 100px;
-    //     height: 100px;
-    //     display: flex;
-    //     grid-gap: 6px;
-    //     }
+    #c, img{
+        background-repeat:no-repeat;
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+        grid-column-start: 1/4;
+        grid-row-start: 4/5;
+        }
