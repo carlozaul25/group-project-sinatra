@@ -4,6 +4,9 @@
     grid-template-columns: 1fr 1fr 1fr 1fr ;
     border: 2px soild red;
 }
-#a{
-    
+#a, img{
+width: 100px;
+height: 100px;
+display: flex;
+grid-gap: 6px;
 }
