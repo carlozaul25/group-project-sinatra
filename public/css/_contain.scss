@@ -1,0 +1,22 @@
+.contain div{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 6px;
+}
+// li{
+//     display: inline;
+// }
+
+
+//  img{
+//      background-repeat:no-repeat;
+//     width: 100%;
+//     height: 200px;
+//     display:block;
+//     grid-column-start: 1/4;
+//     grid-row-start: 1/2;
+    
+//     }
+
