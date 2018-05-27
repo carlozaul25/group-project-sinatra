@@ -2,11 +2,8 @@
     margin: 0; 
     padding: 0;
 border: 12px solid 2px;
+-webkit-text-fill-color: link-color;
 }
-.left{
-text-align:left;
-}
-.right {
-    margin-left:50px;
-    text-align: right;
+#More a:hover{
+background-color:$hover-color;
 }
