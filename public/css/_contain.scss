@@ -18,3 +18,12 @@ img{
     height:200px;
     // padding: 8px;
 }
+a {
+    background-color:$table-color;
+    -webkit-text-fill-color:$font-color;
+    border:2px solid $border-color;
+}
+ a:hover{
+   
+    background-color: $hover-color;
+}
