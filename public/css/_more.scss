@@ -1,9 +1,28 @@
-#More{
-    margin: 0; 
-    padding: 0;
-border: 12px solid 2px;
--webkit-text-fill-color: link-color;
-}
-#More a:hover{
-background-color:$hover-color;
-}
+
+
+#shop {
+margin-top: 20px;
+margin-left:10%;
+float:left;
+ }
+
+ #shop a{
+    vertical-align: middle;
+    line-height: 1.6;
+    }
+    #shop a:hover{
+       background-color:$hover-color;
+        }
+ #about{
+    margin-top: 20px;
+    margin-left:10%;
+    float:left;
+ }
+ #about a{
+    vertical-align: middle;
+    line-height: 1.6;
+   
+    }
+    #about a:hover{
+        background-color:$hover-color;
+         }
