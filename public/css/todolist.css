@@ -1,0 +1,140 @@
+body {font-family: 'Roboto Condensed', sans-serif;
+  /* fallback for old browsers */
+	  /* Chrome 10-25, Safari 5.1-6 */
+	     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	}
+#imageOnDetailsPage {padding: 25px; border-radius: 25px;
+	border:2px solid rgb(211,223,076, 0.25);
+					 }
+#parent {
+	position: absolute;
+	top: 100px;
+	right: 22px;
+	width: 30%; 
+	z-index: 60;
+ 	background-color: #f7f7f7;
+	box-shadow: -2px  2px 5px 6px rgb(211,223,076, 0.25); ; 
+	display: none;
+ 	 }
+
+.fa-plus {   color: rgb(211,223,076, 0.65)  ; 
+	size: 2em;  
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 30%; 
+	z-index: 65;
+	line-height: 100%;}
+
+ul {list-style: none;
+	margin:0;
+	padding: 0;
+	font-size: 22px;}
+li {background-color: white;
+	height: 40px;
+	line-height: 40px;/* centers text in lis */
+	color: #38404f;}
+
+li:nth-child(2n) {background: rgb(211,223,076, 0.25);} /* applies background color to every second element */
+
+
+
+input {width: 100%; 
+		padding: 12px 12px 12px 20px;  
+		font-size: 20px;
+		background-color: #f7f7f7;	
+		border: 3px solid white ;
+		box-sizing: border-box;  
+		/* includes padding border width when assigning width property. so if we say width 120px it means 
+		120 px already includes all other properties like padding. Which prevent element to go out of borders of the parent element */
+		}
+
+
+input:focus /*Focus means when we click on input*/
+{
+	background-color: rgb(107,125,186, 0.25);;
+	border: 3px solid rgb(211,223,076, 0.95);;
+	outline: none; /*it removes browser default outline*/
+} 
+			
+
+
+.x { background-color: red; 
+	margin-right: 20px;
+	height: 40px;
+	color: white;
+	display: inline-block;
+	width: 0;
+	text-align: center;
+	transition: 0.4s linear;
+	opacity: 0;}
+
+li:hover span {width: 40px; opacity: 1;}
+
+
+
+.crossout {color: silver;
+			text-decoration: line-through;
+				opacity: 0.5;}
+
+#cartAndTodo { position: absolute;
+				right: 15px;
+				top: 15px; 
+			     }
+.cart { float: right; 
+		height: 5em;
+		border: 1px solid silver;
+			}
+#toDoCounter {height: 4em;
+				border: 1px solid silver;
+				margin-right: 12px; }
+
+
+
+.caption { 
+ 			border: 2px solid silver;
+			height: 19%;
+			width: 90%;
+			margin-left: 5%;
+			margin-top: 1%;
+
+			border-radius: 10px;
+			/*position: relative;*/
+			background: rgb(211,223,076, 0.55);
+			/*top: 45%;*/
+			 	
+			color: white;		 
+}
+
+#priceSpan {float: right;
+			margin-right: 2px;
+			font-size: 2em;
+			color: orange;	}
+/*DETAILS PAGE				*/
+#imageOnDetailsPage {
+	margin: 0 auto;
+
+}
+
+
+ /*add item icon*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
