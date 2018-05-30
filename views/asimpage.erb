@@ -1,1 +1,96 @@
-<h1> asimpage 2</h1>
+ 
+
+  <!DOCTYPE html>
+<html>
+<head>
+
+	<title></title>
+<link rel="stylesheet" type="text/css" href="/css/todolist.css">
+
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed:400,700" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+
+
+<style>
+#rowOnIndex { 
+			height: auto;
+			width: 90%;
+			margin-top: 15%;
+			margin-left: 5%
+		} 
+.wraperDiv {border: 2px solid rgb(211,223,076, 0.25);
+			height: 430px;
+			width: 28%;
+			border-radius: 25px;
+			margin-right: 2%;
+			margin-bottom: 20px; 
+			background: rgb(211,223,076, 0.25); 
+			float:left;
+
+}
+.allImageDiv {border: 2px solid rgb(211,223,076, 0.25);
+			height: 300px;
+			width: 100%;
+			border-radius: 25px;
+			margin-right: 2%;
+			margin-bottom: 0;
+			padding-bottom: 0;
+			background-size: 100% 100%; 
+			}  
+
+.fa-plus-circle {font-size: 2em;
+			color: silver;}
+
+.allImageDiv: hover + .caption {display: block;}
+
+
+.fa-shopping-cart {font-size: 3em;}
+</style> 
+
+
+
+
+
+</head>
+<body>
+
+<!-- TODO LIST -->
+ 
+ <div id="parent">
+
+	<input  type="text"  placeholder="Add new task and hit Enter key">
+	<ul id='toDoLi'>		
+		<!-- <li><span class="x"><i class="fa fa-trash"> </i> </span>Guacamole <span class="time"></span></li>
+		<li><span class="x"><i class="fa fa-trash"> </i> </span>Bread <span class="time"> </span></li>
+		<li><span class="x"><i class="fa fa-trash"> </i> </span>Milk <span class="time"> </span></li> -->
+		
+	</ul>
+	 
+</div>
+
+ 	
+<!-- End of TOdO LIST -->
+<div id="cartAndTodo">
+
+	<button id= "toDoCounter" class="btn btn-warning btn-lg" type="button">
+  		To Do List <span id="listBadge" class="badge"> + </span>
+	</button>
+	<button class="btn btn-warning cart" type="button">
+  		<i class="fa fa-shopping-cart"></i>
+ 			<span id="cart" class="badge"></span>
+	</button>
+
+</div> 	
+ 	<div id='rowOnIndex' class="row">
+
+</div>
+<script src="/javascript/index.js"  type="text/javascript">
+	
+
+</script>
+
+
+</body>
+</html>
