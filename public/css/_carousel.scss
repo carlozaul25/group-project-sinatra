@@ -1,78 +1,78 @@
-// .carousels {
-//     width: 100%;
-//     height: 480px;
-//     overflow: hidden;
-//     position: relative;
-//     border: 7px solid olive;
-//     margin-left:30%;
-// }
+.carousels {
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+    position: relative;
+    border: 7px solid olive;
+    margin-left:30%;
+}
 
-//     .inner {
-//         display: flex;
-//         position: absolute;
-//         left: 0;
-//         transition: left 0.25s ease-out;
-//     }
-//      img{
-//         width:100%;
-//         height: 480px;
-//     }
+    .inner {
+        display: flex;
+        position: absolute;
+        left: 0;
+        transition: left 0.25s ease-out;
+    }
+     img{
+        width:100%;
+        height: 480px;
+    }
 
-//     .bubbles {
-//         display: flex;
-//         justify-content: center;
-//         position: absolute;
-//         bottom: 0;
-//         left: 0;
-//         right: 0;
-//         margin-bottom: 5px;
-// 	}
-//         .bubble {
-//             margin: 2.5px;
-//             background-color: white;
-//             border-radius: 100000px;
-//             width: 10px;
-//             height: 10px;
-//             display: inline-block;
-//             opacity: 0.25;
-// 			transition: opacity 0.1s linear;
+    .bubbles {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin-bottom: 5px;
+	}
+        .bubble {
+            margin: 2.5px;
+            background-color: white;
+            border-radius: 100000px;
+            width: 10px;
+            height: 10px;
+            display: inline-block;
+            opacity: 0.25;
+			transition: opacity 0.1s linear;
 		
-//             cursor: pointer;
-// 		}
+            cursor: pointer;
+		}
         
 
-//             .active {
-//                 opacity: 1;
-//             }
+            .active {
+                opacity: 1;
+            }
         
     
 
-//     .next::after, .prev::after {
-//         content: '>';
-//         position: absolute;
-//         top: 50%;
-//         right: 0;
-//         background-color: white;
-//         font-size: 20px;
-//         width: 1em;
-//         height: 3em;
-//         font-weight: bold;
-//         font-family: sans-serif;
-//         transform: translateY(-50%);
-//         line-height: 3em;
-//         box-sizing: border-box;
-//         padding: 0 0.2em;
-//         cursor: pointer;
-//         opacity: 0.5;
-//         transition: opacity 0.1s linear;
-//     }
+    .next::after, .prev::after {
+        content: '>';
+        position: absolute;
+        top: 50%;
+        right: 0;
+        background-color: white;
+        font-size: 20px;
+        width: 1em;
+        height: 3em;
+        font-weight: bold;
+        font-family: sans-serif;
+        transform: translateY(-50%);
+        line-height: 3em;
+        box-sizing: border-box;
+        padding: 0 0.2em;
+        cursor: pointer;
+        opacity: 0.5;
+        transition: opacity 0.1s linear;
+    }
 
-//     .next:hover::after, .prev:hover::after {
-//         opacity: 1;
-//     }
+    .next:hover::after, .prev:hover::after {
+        opacity: 1;
+    }
 
-//     .prev::after {
-//         content: '<';
-//         left: 0;
-//     }
+    .prev::after {
+        content: '<';
+        left: 0;
+    }
 
