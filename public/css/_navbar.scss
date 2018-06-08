@@ -4,7 +4,7 @@ body {
   padding: 0;
   background: #ccc;
 }
- 
+
 .nav ul {
   list-style: none;
   background-color:$nav-color;
@@ -17,17 +17,17 @@ body {
   line-height: 40px;
   height: 40px;
 }
- 
+
 .nav a {
   text-decoration: none;
   display: block;
   transition: .3s background-color;
 }
- 
+
 .nav a:hover {
   background-color:$hover-color;
 }
-  
+
 @media screen and (min-width: 600px) {
   .nav li {
     width: 120px;
@@ -37,11 +37,10 @@ body {
     font-size: 25px;
 
   }
- 
+
   .nav li {
     display: inline-block;
     margin-right: -4px;
   }
- 
-}
 
+}
