@@ -20,10 +20,10 @@ body {font-family: 'Roboto Condensed', sans-serif;
 .fa-plus {   color: rgb(211,223,076, 0.65)  ;
 	size: 2em;
 	position: relative;
-	top: -10px;
-	left: 10px;
+	top: 0;
+	left: 0;
 	width: 30%;
-	z-index: 65;
+	z-index: 199;
 	line-height: 100%;}
 
 ul {list-style: none;
