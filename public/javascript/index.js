@@ -13,9 +13,14 @@ var tempA;
 	{name: 'Healthy Bars' , photo:'https://images-na.ssl-images-amazon.com/images/I/71nsPQpyNJL._SL1200_.jpg' , desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum ha  the industry standard dummy text ever since the 1500s" },
 	{name: 'Eggs', 			photo:'https://images-na.ssl-images-amazon.com/images/I/71%2Bh8YoknEL._SL1500_.jpg', desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum ha  the industry standard dummy text ever since the 1500s" }
 	]
+	
 	var cartItemsCount = 0
 	var selectedItems = [];
-	var rowOnIndex = document.getElementById('rowOnIndex')
+	var rowOnIndex = document.createElement('div')
+	rowOnIndex.setAttribute("id","rowOnIndex");
+	document.getElementsByName("body").appendChild(rowOnIndex);
+
+
 		for (let i=0; i<9; i++) {
 				price = Math.floor( Math.random()*19)
 				var wraperDiv = document.createElement('div');
@@ -23,7 +28,6 @@ var tempA;
 				var productDetails = document.createElement('p');
 				var addToCart = document.createElement('i');
 
-			 	 	rowOnIndex.appendChild(wraperDiv)
 
 			 	 		    wraperDiv.appendChild(addToCart)
 			 	 			wraperDiv.appendChild(allImageDiv)
