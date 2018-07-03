@@ -13,29 +13,38 @@ var tempA;
 	{name: 'Healthy Bars' , photo:'https://images-na.ssl-images-amazon.com/images/I/71nsPQpyNJL._SL1200_.jpg' , desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum ha  the industry standard dummy text ever since the 1500s" },
 	{name: 'Eggs', 			photo:'https://images-na.ssl-images-amazon.com/images/I/71%2Bh8YoknEL._SL1500_.jpg', desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum ha  the industry standard dummy text ever since the 1500s" }
 	]
+	
 	var cartItemsCount = 0
 	var selectedItems = [];
-	var rowOnIndex = document.getElementById('rowOnIndex')
+
+
+
 		for (let i=0; i<9; i++) {
+			var rowOnIndex = document.getElementById("rowOnIndex");
+
 				price = Math.floor( Math.random()*19)
 				var wraperDiv = document.createElement('div');
+				wraperDiv.setAttribute("class", "wraperDiv col-lg-4 col-md-6 col-xs-12 ");
+				wraperDiv.setAttribute("id", "wraperDiv")
 				var allImageDiv = document.createElement('div');
+				allImageDiv.setAttribute("class", "allImageDiv thumbnail")
 				var productDetails = document.createElement('p');
+				productDetails.setAttribute("class", "caption");
 				var addToCart = document.createElement('i');
+				addToCart.setAttribute("class", "fa fa-plus-circle" )
+													addToCart.ariaHidden="true"
+				
+													// console.log(wraperDiv)
+				rowOnIndex.appendChild(wraperDiv)
 
-			 	 	rowOnIndex.appendChild(wraperDiv)
 
 			 	 		    wraperDiv.appendChild(addToCart)
 			 	 			wraperDiv.appendChild(allImageDiv)
 	 						wraperDiv.appendChild(productDetails)
 			                productDetails.innerHTML =  allPhotoArray[i].name + " <span id='priceSpan'> " + '     Price: $' + price + '</span>' + '<br>' + allPhotoArray[i].desc.slice(0,55) + '<br> <a href=/details/' +  i  + '>' + ' See details ' + '</a>'   ;
 
- 						wraperDiv.setAttribute("class", "wraperDiv col-lg-4 col-md-6 col-xs-12 ");
-				    	allImageDiv.setAttribute("class", "allImageDiv thumbnail")
-				    	addToCart.setAttribute("class", "fa fa-plus-circle" )
-				    							    addToCart.ariaHidden="true"
+				    	
 
-				    	productDetails.setAttribute("class", "caption");
 
 
 				        allImageDiv.style.backgroundImage = "url(" + allPhotoArray[i].photo + ")";
@@ -52,9 +61,9 @@ var tempA;
 
 				          	// $('li', 'ul').last().remove()
 				          	  	selectedItems.splice(selectedItems.indexOf(allPhotoArray[i].name),1)
-				          	  	 $("ul").html(' ')
+				          	  	 $("#toDoLi").html(' ')
 									for (i=0; i<selectedItems.length; i++){
-										$("ul").append("<li>" + "<span class='x'>" + "<i class='fa fa-trash'></i> " + "</span>" + selectedItems[i] + "</span>" + "</li>")
+										$("#toDoLi").append("<li>" + "<span class='x'>" + "<i class='fa fa-trash'></i> " + "</span>" + selectedItems[i] + "</span>" + "</li>")
 									}
 				          	 cartItemsCount++
  						     cart.innerHTML=cartItemsCount;
@@ -69,14 +78,14 @@ var tempA;
 
 // TODO LIST
 
-$("ul").on("click","li", // click event on every li inside of ul
+$("#toDoLi").on("click","li", // click event on every li inside of ul
 	function()
 {
 $(this).toggleClass("crossout");
 });
 
 
-$("ul").on("click",".x",function(e)
+$("#toDoLi").on("click",".x",function(e)
 {
 	$(this).parent().fadeOut(1000,function(){$(this).remove()});
 	e.stopPropagation();
@@ -94,9 +103,9 @@ $("input[type='text']").keypress(function(event)  // passing keypress to functio
 		// it appends a string with html tags to element we aplying it for
 		selectedItems.push(val);
 			tempA = selectedItems[selectedItems.length-1]
-         $("ul").html(' ')
+         $("#toDoLi").html(' ')
 		for (i=0; i<selectedItems.length; i++){
-			$("ul").append("<li>" + "<span class='x'>" + "<i class='fa fa-trash'></i> " + "</span>" + selectedItems[i] + "</span>" + "</li>")
+			$("#toDoLi").append("<li>" + "<span class='x'>" + "<i class='fa fa-trash'></i> " + "</span>" + selectedItems[i] + "</span>" + "</li>")
 		}
 
 

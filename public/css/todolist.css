@@ -30,12 +30,12 @@ ul {list-style: none;
 	margin:0;
 	padding: 0;
 	font-size: 22px;}
-li {background-color: white;
+li {
 	height: 40px;
 	line-height: 40px;/* centers text in lis */
-	color: #38404f;}
+	}
 
-li:nth-child(2n) {background: rgb(211,223,076, 0.25);} /* applies background color to every second element */
+li:nth-child(2n) {} /* applies background color to every second element */
 
 
 
